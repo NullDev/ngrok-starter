@@ -5,13 +5,13 @@ This script is able to start NGROK (https://ngrok.com/) and display the URL's to
 
 ## Why?
 
-This script can be used to automate processes like launchen an ngrok tunnel on boot.
+This script can be used to automate processes like launchen an ngrok tunnel on boot.<br>
 There are two main variables declared:
 
 - LNK_HTTP
 - LNK_HTTPS
 
-They can be used to pass the public links to other script or perform operations with them.
+They can be used to pass the public links to other script or perform operations with them.<br>
 The script can also be used to launch ngrok directly from your desktop without opening up a terminal. 
 
 ## How to use:
