@@ -11,7 +11,7 @@
 #   NGROK  PATH   #
 #-----------------#
 ###################
-NG=/home/path/to/ngrok
+NG=/your/path/to/ngrok
 #-----------------#
 ###################
 
@@ -52,7 +52,11 @@ function logo {
 	printf "\n\n\n"
 	printf " Loading...\n\n\n"
 }
+cls
+logo
+pkill -f ngrok
 EXEC=$($NG http $PT >> /dev/null &)
+sleep 5s
 if ! [ -x "$(command -v curl)" ]; then
 	unset API
 	API=$(wget -qO - $tnl | awk -F"," -v k=$lnpref '{
@@ -76,8 +80,6 @@ IFS=$'\n' read -rd '' -a FST <<<"$API"
 FST=${FST//http\:\/\/}
 LNK_HTTP="http://${FST}"
 LNK_HTTPS="https://${FST}"
-cls
-logo
 printf " ${C_BLE}Status: ${C_GRN}ONLINE${C_RST}\n\n"
 printf " ${C_BLE}Link (HTTP):  ${C_YLW}${LNK_HTTP}${C_RST}\n"
 printf " ${C_BLE}Link (HTTPS): ${C_YLW}${LNK_HTTPS}${C_RST}\n"
