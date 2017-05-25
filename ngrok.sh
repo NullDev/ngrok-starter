@@ -78,10 +78,13 @@ API=${API//$sq}
 API=${API//$prefix}
 IFS=$'\n' read -rd '' -a FST <<<"$API"
 FST=${FST//http\:\/\/}
+sleep 1s
 LNK_HTTP="http://${FST}"
 LNK_HTTPS="https://${FST}"
 printf " ${C_BLE}Status: ${C_GRN}ONLINE${C_RST}\n\n"
 printf " ${C_BLE}Link (HTTP):  ${C_YLW}${LNK_HTTP}${C_RST}\n"
 printf " ${C_BLE}Link (HTTPS): ${C_YLW}${LNK_HTTPS}${C_RST}\n"
+printf "\n Press [ENTER] to leave..."
 printf "\n\n\n"
+read -p " "
 exit 0
