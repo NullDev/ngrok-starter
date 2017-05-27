@@ -14,6 +14,8 @@ There are two main variables declared:
 They can be used to pass the public links to other script or perform operations with them.<br>
 The script can also be used to launch ngrok directly from your desktop without opening up a terminal. 
 
+The project is done and working. Still need to optimize the startup...
+
 ## How to use:
 
 Clone this repository:
