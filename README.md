@@ -20,7 +20,7 @@ The project is done and working. Still need to optimize the startup...
 
 Clone this repository:
 
-&nbsp;&nbsp;&nbsp;&nbsp;$ `git clone https://github.com/NLDev/ngrok-starter.git && cd ngrok-starter` 
+&nbsp;&nbsp;&nbsp;&nbsp;$ `git clone https://github.com/NullDev/ngrok-starter.git && cd ngrok-starter` 
 
 Make the script executable:
 
@@ -49,5 +49,5 @@ Thats it!
 <p align="center">
 <br>
 <strike>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strike> Screenshot <strike>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strike><br><br>
-<img src="https://raw.githubusercontent.com/NLDev/ngrok-starter/master/.scr/scr1.png" alt="scr1" />
+<img src="https://raw.githubusercontent.com/NullDev/ngrok-starter/master/.scr/scr1.png" alt="scr1" />
 </p>
